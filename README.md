@@ -50,7 +50,7 @@ machine-learning-challenge
   
   <p align="center">
   <a href="https://github.com/github_username/repo_name">
-    <img src="icons/live-demo.png" alt="Logo" width="80" height="80">
+    <img src="/reports/icons/live-demo.png" alt="Logo" width="80" height="80">
   </a>
    <h4 align="center">Live Demo</h4>
 
@@ -58,28 +58,28 @@ machine-learning-challenge
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [contributors-shield]: icons/contributors.png
 [contributors-url]: https://github.com/othneildrew/Best-README-Template/graphs/contributors
-[forks-shield]: icons/fork.png
+[forks-shield]: /reports/icons/fork.png
 [forks-url]: https://github.com/othneildrew/Best-README-Template/network/members
-[stars-shield]: icons/half_star.png
+[stars-shield]: /reports/icons/half_star.png
 [stars-url]: https://github.com/othneildrew/Best-README-Template/stargazers
-[issues-shield]: icons/bug.png
+[issues-shield]: /reports/icons/bug.png
 [issues-url]: https://github.com/othneildrew/Best-README-Template/issues
-[license-shield]: icons/certified.png 
+[license-shield]: /reports/icons/certified.png 
 [license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
 <!-- [demo-shield]: icons/live-demo.png 
 [demo-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt -->
-[snippet-shield]: icons/articles.png
+[snippet-shield]: /reports/icons/articles.png
 [linkedin-url]: https://www.linkedin.com/in/donleygustave/
-[linkedin-shield]: icons/linkedin.png
+[linkedin-shield]: /reports/icons/linkedin.png
 [twitter-url]: https://twitter.com/donley_cg
-[twitter-shield]: icons/twitter.png
+[twitter-shield]: /reports/icons/twitter.png
 [facebook-url]: https://www.facebook.com/dgustave
-[facebook-shield]: icons/facebook.png
+[facebook-shield]: /reports/icons/facebook.png
 [zoom-url]: https://calendly.com/donleyc-gustave/meeting
-[zoom-shield]:  icons/zoom.png
+[zoom-shield]:  /reports/icons/zoom.png
 
 <!-- MARKDOWN LINKS & IMAGES -->
-[project-screenshot]: images/screenshot.png
+[project-screenshot]: /reports/images/exoplanets.png
 
 <!-- TABLE OF CONTENTS -->
 ## Table of Contents
@@ -181,20 +181,35 @@ To get a local copy up and running follow these simple steps.
 ### Prerequisites
 
 This is an example of how to list things you need to use the software and how to install them.
-* npm
+* pip
 ```sh
-npm install npm@latest -g
+python -m pip install --upgrade pip
+```
+
+* conda
+```sh
+conda install -c anaconda pip
 ```
 
 ### Installation
 
 1. Clone the repo
 ```sh
-git https://github.com/dgustave/README-Template.git
+git https://github.com/dgustave/machine-learning-challenge.git
 ```
-2. Install NPM packages
+2. Install Pip packages
 ```sh
-npm install
+pip install tensorflow
+```
+```sh
+pip install keras
+```
+```sh
+pip install sklearn --upgrade
+```
+
+```sh
+pip install joblib
 ```
 
 ## Articles
