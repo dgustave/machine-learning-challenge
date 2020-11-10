@@ -207,7 +207,6 @@ pip install keras
 ```sh
 pip install sklearn --upgrade
 ```
-
 ```sh
 pip install joblib
 ```
