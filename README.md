@@ -43,24 +43,21 @@ machine-learning-challenge
    
 
   <p align="center">
-    <p>Another deep learning model,<strong> a Kepler production</strong> 
-I loaded in 21 columns from the data set for the Category CANDIDATE realized by looking at other datasets online alot of data could been maniuplated with more background Knowledge. After classifying the data based on the koi_plnt_tce_num. One hot encoding was not required in this case since the data was already classified based on the planet nums on filtering it by <strong> CANDIDATE</strong>, then split the data into Training & Test data sets.
-Their was a Loss of 0.0 and an Accuracy of 0.8386727571487427. 
-Using GridSearchCV to tune the model's parameters and changing the grid parameters C and gamma and got {'C': 50, 'gamma': 0.0001}
-Random Forest Model
-The first step after reading the data to a dataframe is to decide which features to keep for the model.
-So i decided to perform a Random Forest Classifier search to do it.
-not useful as a feature. It was just giving the planets numbers as grouping them.
-I removed the features koi_fpflag_nt, koi_fpflag_ss, koi_fpflag_co, koi_fpflag_ec the assumption was since their values are mostly 0's removing them would increase the accuracy of the model
-After performing Random Classifier i got the sorted list of all the features by their importance and it turned out koi_score was the one with highest importance.
+ This dataset is a cumulative record of all observed Kepler "objects of interest" — basically, all of the approximately 10,000 exoplanet candidates Kepler has taken observations on.
+
+This dataset has an extensive data dictionary, which can be accessed here. Highlightable columns of note are:
+
+kepoi_name: A KOI is a target identified by the Kepler Project that displays at least one transit-like sequence within Kepler time-series photometry that appears to be of astrophysical origin and initially consistent with a planetary transit hypothesis
+kepler_name: [These names] are intended to clearly indicate a class of objects that have been confirmed or validated as planets—a step up from the planet candidate designation.
+koi_disposition: The disposition in the literature towards this exoplanet candidate. One of CANDIDATE, FALSE POSITIVE, NOT DISPOSITIONED or CONFIRMED.
+koi_pdisposition: The disposition Kepler data analysis has towards this exoplanet candidate. One of FALSE POSITIVE, NOT DISPOSITIONED, and CANDIDATE.
 koi_score: A value between 0 and 1 that indicates the confidence in the KOI disposition. For CANDIDATEs, a higher value indicates more confidence in its disposition, while for FALSE POSITIVEs, a higher value indicates less confidence in that disposition.
-Then i decided to create clusters using make_blobs for the data and kmeans by using Koi-score as X-axis and Koi_disposition in y.
-Deep learning Model
-For this model, data cleaning and preprocessing steps were the same as Deep Learning-1 model except the fact that i decided to keep All the categories of Koi_disposition in this case and performing search on the raw data set.
-After deciding which features to keep next step was assigning X and y values for the model to perform split data to get train and test data for the model.
-Next step is to scale and normalize the data to create more accurate model that has less gap between data points so they all have acurate weights for the model. I used MinMaxScaler to scale the data with deep learning model with a Loss: 0.258515864610672, Accuracy: 0.8998855948448181 after performing the deep learning.
-Using GridSearchCV to tune the model's parameters, and changing C values, and increasing the number of iterations max_iter didn't improve scores sufficiently.
-I got more accuracy in this Deep learning model as compared to the Deep Learning 1 Model and the RandomForest classifier is really helpful deciding the feature importances.</p>
+
+    <p>Another deep learning model,<strong> a Kepler production</strong> 
+I loaded in 40 columns from the data set for the Category CANDIDATE realized by looking at other datasets online, alot of data could been maniuplated with more background Knowledge. After classifying the data based on the koi_plnt_tce_num. One hot encoding was not required in this case since the data was already classified based on the planet nums on filtering it by <strong> CANDIDATE</strong>, then split the data into Training & Test data sets.
+The a Loss of 0.2194  and an Accuracy of   0.9086400866508484. 
+Using GridSearchCV to tune the model's parameters and changing the grid parameters C and gamma and got {'C': 50, 'gamma': 0.0001}
+.</p>
     <br />
 
   <!-- [![Live Demo][demo-shield]][demo-url] -->
