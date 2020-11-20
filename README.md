@@ -52,12 +52,10 @@ koi_disposition: The disposition in the literature towards this exoplanet candid
 koi_pdisposition: The disposition Kepler data analysis has towards this exoplanet candidate. One of FALSE POSITIVE, NOT DISPOSITIONED, and CANDIDATE.
 koi_score: A value between 0 and 1 that indicates the confidence in the KOI disposition. For CANDIDATEs, a higher value indicates more confidence in its disposition, while for FALSE POSITIVEs, a higher value indicates less confidence in that disposition.
 
-    <p>Another deep learning model, <strong> a Kepler production</strong> 
+<p> Another deep learning model, <strong> a Kepler production</strong> 
 I loaded in 40 columns from the data set for the Category CANDIDATE realized by looking at other datasets online, alot of data could been maniuplated with more background Knowledge. After classifying the data based on the koi_plnt_tce_num. One hot encoding was not required in this case since the data was already classified based on the planet nums on filtering it by <strong> CANDIDATE</strong>, then split the data into Training & Test data sets.
 The a Loss of 0.2194  and an Accuracy of   0.9086400866508484. 
-Using GridSearchCV to tune the model's parameters and changing the grid parameters C and gamma and got {'C': 50, 'gamma': 0.0001}
-.</p>
-    <br />
+Using GridSearchCV to tune the model's parameters and changing the grid parameters }<br /></p>
 
   <!-- [![Live Demo][demo-shield]][demo-url] -->
   
