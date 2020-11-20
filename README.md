@@ -50,10 +50,7 @@ Using GridSearchCV to tune the model's parameters and changing the grid paramete
 Random Forest Model
 The first step after reading the data to a dataframe is to decide which features to keep for the model.
 So i decided to perform a Random Forest Classifier search to do it.
-I cleaned the data and divided it into 2 sets.
-One with all the Numerical fields and the y values as the one with Koi_disposition.
-I performed label encoding on the y field then.
-This exoplanet data has koi_tce_plnt_num column that was not useful as a feature. It was just giving the planets numbers as grouping them.
+not useful as a feature. It was just giving the planets numbers as grouping them.
 I removed the features koi_fpflag_nt, koi_fpflag_ss, koi_fpflag_co, koi_fpflag_ec the assumption was since their values are mostly 0's removing them would increase the accuracy of the model
 After performing Random Classifier i got the sorted list of all the features by their importance and it turned out koi_score was the one with highest importance.
 koi_score: A value between 0 and 1 that indicates the confidence in the KOI disposition. For CANDIDATEs, a higher value indicates more confidence in its disposition, while for FALSE POSITIVEs, a higher value indicates less confidence in that disposition.
